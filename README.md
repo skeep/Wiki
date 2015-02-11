@@ -10,44 +10,44 @@ Classitis is the use of class name for almost every element in the markup. Class
 
 1. A markup with divitis:
 
-<div id="header">
+<pre><div id="header">
 	<div class="bold">Heading</div>
 </div>
 <div id="subheader">
 	<div class="bold">Sub Heading</div>
 </div>
-<div>This is the content</div>
+<div>This is the content</div></pre>
 
 The above markup without divitis
 
-<h1>Heading</h1>
+<pre><h1>Heading</h1>
 <h2>Sub Heading</h2>
-<p>This is the content</p>
+<p>This is the content</p></pre>
 
 2. A markup with classitis:
 
-<ul>
+<pre><ul>
 	<li><a class="link" href="#">Link1</a></li>
 	<li><a class="link" href="#">Link2</a></li>
 	<li><a class="link" href="#">Link3</a></li>
 	<li><a class="link" href="#">Link4</a></li>
 	<li><a class="link" href="#">Link5</a></li>
 	<li><a class="link" href="#">Link6</a></li>
-</ul>
+</ul></pre>
 
 The above markup without classitis:
 
-<ul id="nav">
+<pre><ul id="nav">
 	<li><a href="#">Link1</a></li>
 	<li><a href="#">Link2</a></li>
 	<li><a href="#">Link3</a></li>
 	<li><a href="#">Link4</a></li>
 	<li><a href="#">Link5</a></li>
 	<li><a href="#">Link6</a></li>
-</ul>
+</ul></pre>
 
 3. A markup full of divitis and classitis:
-	[link](view-source:www.bobdylan.com/songs/my-back-pages)
+	http://www.bobdylan.com/songs/my-back-pages
 
 
 ###Recommended
@@ -63,7 +63,7 @@ The above markup without classitis:
 1. Using divs to define everything instead of using other elements.
 2. Using classes everywhere to select elements.
 
-###Further referece
+###Further reference
 * http://css-tricks.com/css-beginner-mistakes-1/
 * http://adam.kahtava.com/journal/2009/07/15/cronic-divitis-and-classitis-what-is-it/
 * http://www.steveworkman.com/html5-2/standards/2009/classitis-the-new-css-disease/
