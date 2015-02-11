@@ -8,7 +8,7 @@ Classitis is the use of class name for almost every element in the markup. Class
 
 ### Example
 
-1. A markup with divitis:
+<h4>A markup with divitis:</h4>
 
 ```html
 <div id="header">
@@ -20,7 +20,7 @@ Classitis is the use of class name for almost every element in the markup. Class
 <div>This is the content</div>
 ```
 
-The above markup without divitis
+<b>The above markup without divitis:</b>
 
 ```html
 <h1>Heading</h1>
@@ -28,10 +28,9 @@ The above markup without divitis
 <p>This is the content</p>
 ```
 
-2. A markup with classitis:
+<h4>A markup with classitis:</h4>
 
 ```html
-<pre>
 <ul>
 	<li><a class="link" href="#">Link1</a></li>
 	<li><a class="link" href="#">Link2</a></li>
@@ -40,12 +39,11 @@ The above markup without divitis
 	<li><a class="link" href="#">Link5</a></li>
 	<li><a class="link" href="#">Link6</a></li>
 </ul>
-</pre>
 ```
 
-The above markup without classitis:
+<b>The above markup without classitis:</b>
 
-'''html
+```html
 <ul id="nav">
 	<li><a href="#">Link1</a></li>
 	<li><a href="#">Link2</a></li>
@@ -54,9 +52,9 @@ The above markup without classitis:
 	<li><a href="#">Link5</a></li>
 	<li><a href="#">Link6</a></li>
 </ul>
-'''
+```
 
-3. A markup full of divitis and classitis:
+<h4>A markup full of divitis and classitis:</h4>
 	http://www.bobdylan.com/songs/my-back-pages
 
 
