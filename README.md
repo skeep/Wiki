@@ -10,7 +10,7 @@ Classitis is the use of class name for almost every element in the markup. Class
 
 1. A markup with divitis:
 
-'''HTML
+'''html
 <div id="header">
 	<div class="bold">Heading</div>
 </div>
@@ -22,7 +22,7 @@ Classitis is the use of class name for almost every element in the markup. Class
 
 The above markup without divitis
 
-'''HTML
+'''html
 <h1>Heading</h1>
 <h2>Sub Heading</h2>
 <p>This is the content</p>
@@ -30,7 +30,7 @@ The above markup without divitis
 
 2. A markup with classitis:
 
-'''HTML
+'''html
 <ul>
 	<li><a class="link" href="#">Link1</a></li>
 	<li><a class="link" href="#">Link2</a></li>
@@ -43,7 +43,7 @@ The above markup without divitis
 
 The above markup without classitis:
 
-'''HTML
+'''html
 <ul id="nav">
 	<li><a href="#">Link1</a></li>
 	<li><a href="#">Link2</a></li>
