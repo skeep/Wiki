@@ -55,7 +55,7 @@ Classitis is the use of class name for almost every element in the markup. Class
 ```
 
 <h4>A markup full of divitis and classitis:</h4>
-	[link](http://www.bobdylan.com/songs/my-back-pages) 
+	* http://www.bobdylan.com/songs/my-back-pages
 
 
 ###Recommended
