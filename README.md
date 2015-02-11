@@ -10,41 +10,49 @@ Classitis is the use of class name for almost every element in the markup. Class
 
 1. A markup with divitis:
 
-'''<div id="header">
+'''HTML
+<div id="header">
 	<div class="bold">Heading</div>
 </div>
 <div id="subheader">
 	<div class="bold">Sub Heading</div>
 </div>
-<div>This is the content</div>'''
+<div>This is the content</div>
+'''
 
 The above markup without divitis
 
-'''<h1>Heading</h1>
+'''HTML
+<h1>Heading</h1>
 <h2>Sub Heading</h2>
-<p>This is the content</p>'''
+<p>This is the content</p>
+'''
 
 2. A markup with classitis:
 
-'''<ul>
+'''HTML
+<ul>
 	<li><a class="link" href="#">Link1</a></li>
 	<li><a class="link" href="#">Link2</a></li>
 	<li><a class="link" href="#">Link3</a></li>
 	<li><a class="link" href="#">Link4</a></li>
 	<li><a class="link" href="#">Link5</a></li>
 	<li><a class="link" href="#">Link6</a></li>
-</ul>'''
+</ul>
+'''
 
 The above markup without classitis:
 
-'''<ul id="nav">
+'''HTML
+<ul id="nav">
 	<li><a href="#">Link1</a></li>
 	<li><a href="#">Link2</a></li>
 	<li><a href="#">Link3</a></li>
 	<li><a href="#">Link4</a></li>
 	<li><a href="#">Link5</a></li>
 	<li><a href="#">Link6</a></li>
-</ul>'''
+</ul>
+'''
 
 3. A markup full of divitis and classitis:
 	http://www.bobdylan.com/songs/my-back-pages
