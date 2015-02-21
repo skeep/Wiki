@@ -1,6 +1,7 @@
 # HTML Coding Guideline
 1. [Divitis and Classitis](#divitis-and-classitis)
-2. [Tables - For data rendering - Not for data structuring](#tables---for-data-rendering---not-for-data-structuring)
+2. [Tables - For data rendering - Not for layout](#tables---for-data-rendering---not-for-data-structuring)
+3. [Use UTF-8 Charset](#utf-8-charset)
 
 ## Divitis and Classitis
 
