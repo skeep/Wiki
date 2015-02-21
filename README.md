@@ -1,4 +1,6 @@
-# Wiki
+# HTML Coding Guideline
+1. [Divitis and Classitis](#divitis-and-classitis)
+2. [Tables - For data rendering - Not for data structuring](#)
 
 ## Divitis and Classitis
 
