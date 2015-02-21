@@ -2,6 +2,7 @@
 1. [Divitis and Classitis](#divitis-and-classitis)
 2. [Tables - For data rendering - Not for layout](#tables---for-data-rendering---not-for-data-structuring)
 3. [Use UTF-8 Charset](#utf-8-charset)
+4. [Don't use deprecated tags](#dont-use-deprecated-tags)
 
 ## Divitis and Classitis
 
@@ -213,7 +214,7 @@ Various html tags that are deprecated are
 
 ### Not Recommended - Recommended
 
-*font, basefont *
+**font, basefont**
 These tags should not be used any more. CSS is preferred to serve the same purpose.
 
 
