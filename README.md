@@ -1,14 +1,15 @@
 # Wiki
-### Divitis and Classitis
+
+## Divitis and Classitis
 
 Divitis is the overuse of div tags in HTML. This scripting style is mainly seen in programmers who are relatively new to HTML & CSS. Divitis makes it difficult for search engines to crawl through the page and it also adds code which is not required.
 
 Classitis is the use of class name for almost every element in the markup. Classitis reduces the performance of the page by adding unnecessary weight.
 
 
-### Example
+### Examples
 
-<h4>A markup with divitis:</h4>
+####A markup with divitis:
 
 ```html
 <div id="header">
@@ -20,7 +21,7 @@ Classitis is the use of class name for almost every element in the markup. Class
 <div>This is the content</div>
 ```
 
-<b>The above markup without divitis:</b>
+*The above markup without divitis:*
 
 ```html
 <h1>Heading</h1>
@@ -28,7 +29,7 @@ Classitis is the use of class name for almost every element in the markup. Class
 <p>This is the content</p>
 ```
 
-<h4>A markup with classitis:</h4>
+####A markup with classitis:
 
 ```html
 <ul>
@@ -41,7 +42,7 @@ Classitis is the use of class name for almost every element in the markup. Class
 </ul>
 ```
 
-<b>The above markup without classitis:</b>
+*The above markup without classitis:*
 
 ```html
 <ul id="nav">
@@ -54,7 +55,7 @@ Classitis is the use of class name for almost every element in the markup. Class
 </ul>
 ```
 
-<h4>A markup full of divitis and classitis:</h4>
+####A markup full of divitis and classitis:
 
 * http://www.bobdylan.com/songs/my-back-pages
 
@@ -77,4 +78,81 @@ Classitis is the use of class name for almost every element in the markup. Class
 * http://adam.kahtava.com/journal/2009/07/15/cronic-divitis-and-classitis-what-is-it/
 * http://www.steveworkman.com/html5-2/standards/2009/classitis-the-new-css-disease/
 * https://csscreator.com/divitis
+
+
+## Tables - For data rendering - Not for data structuring
+
+### Explanation
+
+#### Tables for data renedering
+
+1. Tables have been part of HTML almost since HTML began. The idea was to make it possible to display tabular data, equivalent to a spreadsheet.
+2. This purpose is still valid. Using tables for tabular data is perfectly standards-compliant and makes a lot of sense from an accessibility standpoint.
+3. HTML tables should only be used for rendering data that belongs naturally in a grid, in other words where the data describe a number of objects that have the same properties.
+
+
+#### Tables for data layout
+
+1. As the internet progressed and as people started doing more things online, designers started using tables to create multi-column website layouts.
+2. This was never the intention of those who created HTML standards, but it quickly caught on and table-based layouts became the norm online.
+3. Tables are less flexible than divs - Table contains different tags: the table tag being the wrapper, tr for each row and td for each cell. For readability, each tag is normally given its own line of code, with indention. Any developer maintaining that page in future has to go through a lot of code to understand its structure.
+4. Nested tables are code smell that a website is stuck in table hell. The number of lines of code is endless, and the complexity is overwhelming. Tables are far from clean code and don’t bring anything semantic to the content unless you’re dealing with actual tabular data.
+5. Excess code slows down development and raises maintenance costs.
+More lines of code mean larger file sizes, which mean longer download times. Because tables increase the code base, such structures likely contain more bugs than layouts with less code lines.
+
+
+###Recommended
+
+*Tables should be used for data rendering: Why?*
+
+* HTML tables should only be used for rendering data that belongs naturally in a grid, in other words where the data describe a number of objects that have the same properties.
+* Tables should be used whenever you have tabular data to display.This could include charts of data or statistics, as well as things like price charts, product lists etc.
+* Use CSS for layout, it has its own advantage over tables as explained in the following example.
+
+###Not Recommended
+*Tables should never be used for layout: Why?*
+1. Tables are semantically incorrect markup for layout.
+2. Tables prevent certain layouts from working within them (like height:100% for child elements of td tag).
+3. Tables make life difficult for those using screen readers.
+4. Tables lock you into the current design and make redesigns much harder.
+
+###Example 
+
+To make html tables :
+`index.html`
+```html 
+<table cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td colspan="3" height="120px">....</td>
+  </tr>
+  <tr>
+    <td class="menu" valign="top">...</td>
+    <td class="content" valign="top">...</td>
+    <td class="aSide" valign="top">...</td>
+  </tr>
+  <tr>
+    <td colspan="3">...</td>
+  </tr>
+</table>
+</table>
+```
+
+To make css work like tables :
+`index.html`
+```html 
+<div id="header">...</div>
+<div id="menu">...</div>
+<div id="content">...</div>
+<div id="aSide">...</div>
+<div id="footer">...</div>
+```
+
+
+
+###Further Readings
+1. http://www.noupe.com/design/better-ui-design-proper-use-of-tables.html
+2. http://phrogz.net/css/WhyTablesAreBadForLayout.html#incorrectsemantics
+3. http://www.vanseodesign.com/css/css-divs-vs-tables/
+4. http://www.chromaticsites.com/blog/13-reasons-why-css-is-superior-to-tables-in-website-design
+
 
