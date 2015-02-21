@@ -214,72 +214,49 @@ Various html tags that are deprecated are
 
 ### Not Recommended - Recommended
 
-**font, basefont**
-These tags should not be used any more. CSS is preferred to serve the same purpose.
+**font, basefont** - These tags should not be used any more. CSS is preferred to serve the same purpose.
 
+**b, i, u** - These tend to be a bit more controversial, but as much as possible, try to use respectively strong, em or span tag and CSS (text-decoration:underline) when relevant. 
 
-*b, i, u*
-These tend to be a bit more controversial, but as much as possible, try to use respectively strong, em or span tag and CSS (text-decoration:underline) when relevant. 
+**acronym** - The acronym tag should not be used any more. abbr is preferred to represent an abbreviation.
 
+**tt, xmp** - Do not use these elements. To represent a fragment of computer code, use code tag. To represent preformatted text, use pre tag. If you only want to use a monospaced font, you can use font-family: monospace in CSS.
 
-*acronym*
-The acronym tag should not be used any more. abbr is preferred to represent an abbreviation.
+**applet** - This element shouldn't be used any more. Instead object tag is preferred because it is more generic.
 
+**center** - This tag has been deprecated in favour of text-align property of CSS which can be applied to the div element or to an individual p element.
 
-*tt, xmp*
-Do not use these elements. To represent a fragment of computer code, use code tag. To represent preformatted text, use pre tag. If you only want to use a monospaced font, you can use font-family: monospace in CSS.
+**spacer** - spacer tag is an HTML element which is used for inserting white spaces to web pages. However spacer tag is not supported by any major browser and same effects can be created with various CSS rules.
 
+**blink** - This tag should not be used and a replacement for it is {text-decoration: blink} which can be applied to the div element or to an individual p element.
 
-*applet*
-This element shouldn't be used any more. Instead object tag is preferred because it is more generic.
+**dir** - dir tag has been deprecated in favor of ul tag because there is no need for two tags that do the same job.
 
+**strike** - The HTML Strikethrough Element renders text with a strikethrough. However this tag is deprecated and replaced with {text-decoration: line-through}.
 
-*center*
-This tag has been deprecated in favour of text-align property of CSS which can be applied to the div element or to an individual p element.
+**frame, frameset** - It is not recommended to use frame tag which defines a particular area in which another HTML document can be displayed and frameset tag which is used to contain frame elements.
 
-
-*spacer*
-spacer tag is an HTML element which is used for inserting white spaces to web pages. However spacer tag is not supported by any major browser and same effects can be created with various CSS rules.
-
-
-*blink*
-This tag should not be used and a replacement for it is {text-decoration: blink} which can be applied to the div element or to an individual p element.
-
-
-*dir*
-dir tag has been deprecated in favor of ul tag because there is no need for two tags that do the same job.
-
-
-*strike*
-The HTML Strikethrough Element renders text with a strikethrough. However this tag is deprecated and replaced with {text-decoration: line-through}.
-
-
-*frame, frameset*
-It is not recommended to use frame tag which defines a particular area in which another HTML document can be displayed and frameset tag which is used to contain frame elements.
-
+```html
 	<frameset cols="20%,*,">
 	    <frame src="menu.html">
 	    <frame src="events.html">
 	</frameset> 
+```
 
 The above tags can be replaced with :
 
+```html
 	<iframe class="menu" src="menu.html"></iframe>
 	<iframe class="mainContent" src="events.html"></iframe>
+```
 
+**plaintext, listing** - Instead of using this element, we should use the pre tag or, if semantically adequate, the code tag.
 
-*plaintext, listing*
-Instead of using this element, we should use the pre tag or, if semantically adequate, the code tag.
+**isindex** - This tag is deprecated and the feature of searching words in the current page is now provided by all browsers implicitly.
 
-
-*isindex*
-This tag is deprecated and the feature of searching words in the current page is now provided by all browsers implicitly.
-
-
-*noembed*
-This tag is deprecated as the same task can be achieved by object element. 
+**noembed** - This tag is deprecated as the same task can be achieved by object element. 
 
 
 ###further reference
-https://developer.mozilla.org/en/docs/Web/HTML/Element
-https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Obsolete_things_to_avoid
+* https://developer.mozilla.org/en/docs/Web/HTML/Element
+* https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Obsolete_things_to_avoid
