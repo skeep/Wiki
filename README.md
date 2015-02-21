@@ -260,3 +260,46 @@ The above tags can be replaced with :
 ###further reference
 * https://developer.mozilla.org/en/docs/Web/HTML/Element
 * https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Obsolete_things_to_avoid
+
+
+##Optimizing Tag Counts in HTML/CSS
+
+###Reduce the Number of DOM Elements
+
+The more code a browser has to load the longer it will take that browser to process the page.  You should evaluate the number of DOM elements (which can include div, table, span, and the like) being used and reduce any that are not necessary.
+
+A complex page means more bytes to download and it also means slower DOM access in JavaScript. It makes a difference if you loop through 500 or 5000 DOM elements on the page when you want to add an event handler for example.
+A high number of DOM elements can be a symptom that there's something that should be improved with the markup of the page without necessarily removing content. 
+
+Some types of excessive DOM elements could be nested tables (you should avoid nested tables if possible) and Div that are only being used to correct layout issues.  Evaluate your site for the most semantically correct way to markup your page.
+
+
+###Minify JavaScript and CSS###
+
+Minification is the practice of removing unnecessary characters from code to reduce its size thereby improving load times. When code is minified all comments are removed, as well as unneeded white space characters (space, newline, and tab). In the case of JavaScript, this improves response time performance because the size of the downloaded file is reduced. Two popular tools for minifying JavaScript code are JSMin and YUI Compressor. The YUI compressor can also minify CSS.
+
+
+###Examples
+
+```html
+<ul id="navigation-main">
+    etc..
+</ul>
+```
+
+instead of:
+
+```html
+<div id="navigation-main">
+    <ul>
+        etc..
+    </ul>
+</div>
+```
+
+###Further References
+
+* https://developer.yahoo.com/performance/rules.html
+* http://stackoverflow.com/questions/2120953/best-ways-to-reduce-number-of-dom-elements
+* http://www.masternewmedia.org/how-to-make-your-website-faster-part-2-how-to-optimize-your-website-code/
+http://webdesignfan.com/yslow-tutorial-part-3-of-3-reducing-parse-time/#dom
