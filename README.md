@@ -3,6 +3,7 @@
 2. [Tables - For data rendering - Not for layout](#tables---for-data-rendering---not-for-data-structuring)
 3. [Use UTF-8 Charset](#utf-8-charset)
 4. [Don't use deprecated tags](#dont-use-deprecated-tags)
+5. [Optimizing Tag Counts in HTML/CSS](#optimizing-tag-counts-in-htmlcss)
 
 ## Divitis and Classitis
 
